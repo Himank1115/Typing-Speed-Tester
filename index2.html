@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+      />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- adding link help to make front page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="stats1">
+        <p> <span id="timer">0s</span></p>
+      </div>
+    <div class="container">
+      <div class="stats">
+        <p>Mistakes: <span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown=" return false"
+        onselectstart="return false"
+      ></div>
+      <textarea
+        rows="3"
+        id="quote-input"
+        placeholder="starts type here......."
+      ></textarea>
+      <button id="start-test" onclick="startTest()">Start </button>
+      <button id="stop-test" onclick="displayResult()">Stop </button>
+      <button id="reset-test" onclick="resttest()">Reset</button>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <p>Speed: <span id="wpm"></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
