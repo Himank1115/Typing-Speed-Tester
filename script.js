@@ -1,5 +1,12 @@
-  //Random Quotes Api URL 
-const quoteApiUrl = "https://api.quotable.io/random?minLength=80&maxLength=120";
+ //adding fuctionalty to change level
+ function changelevel(){
+  var x=document.getElementById('level').value;
+  if(x=="easy"){
+        window.location.reload();
+}
+ }
+//  Random Quotes Api URL 
+ const quoteApiUrl = "https://api.quotable.io/random?minLength=100&maxLength=400";
 const quoteSection = document.getElementById("quote");
 const userInput = document.getElementById("quote-input");
 let quote = "";
@@ -21,7 +28,7 @@ const renderNewQuote = async () => {
   });
   //join array for displaying
   quoteSection.innerHTML += arr.join("");
-};
+}
 //Logic for comparing input words with quote
 userInput.addEventListener("input", () => {
   let quoteChars = document.querySelectorAll(".quote-chars");
@@ -105,44 +112,22 @@ const startTest = () => {
   timeReduce();
   document.getElementById("start-test").style.display = "none";
   document.getElementById("stop-test").style.display = "block";
-  document.getElementById("reset-test").style.display ="none"
+  document.getElementById("reset-test").style.display ="none";
+  document.getElementById("level").style.display = "none";
 };
 window.onload = () => {
   userInput.value = "";
   document.getElementById("start-test").style.display = "block";
+  document.getElementById("level").style.display = "block";
   document.getElementById("stop-test").style.display = "none";
-  document.getElementById("reset-test").style.display ="none"
+  document.getElementById("reset-test").style.display ="none";
   userInput.disabled = true;
   renderNewQuote();
-
-};
+ };
 // code for reset game
 function resttest() {
   window.location.reload();
-  // clearInterval(timer);
-  // timer = setInterval(updateTimer, 2000);
-  // resetValues();
-  // }
-  
-  // function resetValues() {
-  //    quote = "";
-  //    time = 60;
-  //    timer = "";
-  //    mistakes = 0;
-  // userInput.disabled = false;
-     
-  //  userInput.value = "";
-  // document.getElementById("start-test").style.display = "block";
-  // document.getElementById("stop-test").style.display = "none";
-  // document.getElementById("reset-test").style.display ="none"
-  // userInput.disabled = true;
-  // document.querySelector(".result").style.display = "none";
-  // let data="";
-  // renderNewQuote();
-  // char.classList.remove("success")
-  // char.classList.remove("fail")
-  // document.getElementById("quote").style.font="black";
-  // }
+
 }
 // change of one page to other
  function newgame(){

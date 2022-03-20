@@ -21,14 +21,14 @@ body {
     margin: 50px;
     font-weight: bold;
     padding: 10px 0 10px 10px;
-    background-color:#7FFF00;
+    background-color: #ADEFD1FF;
     text-shadow: -1px -1px black, 1px 1px white;
-    color: #A52A2A;
+    color:  #00203FFF;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -o-border-radius: 7px;
     border-radius: 7px;
-    box-shadow:0 .2em  #A52A2A ;
+    box-shadow:0 .2em  #00203FFF;
     cursor: pointer;
     font-size: 30px;
     padding: 12px;

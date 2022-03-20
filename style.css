@@ -5,7 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
   }
   body {
-    background-color: #67b11c;
+    background-color: #00203FFF;
   }
   .container {
     width: 80vmin;
@@ -16,7 +16,7 @@
     top: 60%;
     left: 50%;
     border-radius: 5px;
-    border: 2px solid #467813;
+    border: 2px solid #ADEFD1FF;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     
   }
@@ -43,26 +43,31 @@
   }
   textarea {
     resize: none;
-    background-color: #67b11c;
-    border:  solid #467813;
+    background-color: #ADEFD1FF;
+    border:  solid ;
     width: 100%;
     border-radius: 5px;
     padding: 10px 5px;
     font-size: 16px;
-    color: black;
+    color: #00203FFF;
   }
   button {
-    margin-left: 35%;
     margin-top: 20px;
-    background-color: #67b11c;
-    color: black;
+    margin-left: 35%;
+    background-color: #ADEFD1FF;
+    border-color: #00203FFF;
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 18px;
   }
+  #start-test{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 3%;
+  }
   #rest-test{
     color: black;
-    margin-top: 0px ;
+    margin-top: 10px ;
     padding: 5px 5px;
   }
   .result {
@@ -88,13 +93,9 @@
     color: #e81c4e;
   }
 
-  /* #timer{
-      position: absolute;
-      top:3rem;
-      left: 14rem;
-      font-weight: bolder;
-      font-size: 40px;
-  } */
+   #timer{
+     color: #ADEFD1FF;
+  } 
 
   /* color to place holder */
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -109,54 +110,18 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color:#fff;
   }
-
-  /* desgin for front page
-  .main {
-    height: min-content;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px 60px;
-    border-radius: 10px;
-    backdrop-filter: saturate(180%) blur(20px);
-    display: block;
+/* diffcult level box desgin */
+select {
+  margin-left: 54%;
+  margin-top: 49px;
+  background-color: #ADEFD1FF;
+  color: black;
+  padding: 9px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  border-width: 2px;
+  border-color: #00203FFF;
 }
-
-
-
-#start {
-    text-align: center;
-    display: block;
-}
-
-.start-btn {
-    text-align: center;
-    display: inline-block;
-    margin: 50px;
-    font-weight: bold;
-    padding: 10px 0 10px 10px;
-    background-color:#7FFF00;
-    text-shadow: -1px -1px black, 1px 1px white;
-    color: #A52A2A;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
-    box-shadow:0 .2em  #A52A2A ;
-    cursor: pointer;
-    font-size: 30px;
-    padding: 12px;
-}
-
-.start-btn:active {
-    box-shadow: none;
-    position: relative;
-    top: .2em;
-}
-
-.heading {
-    margin: 30px auto 0 auto;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 50px;
-    margin-left: 25%;
-
-} */
-
+.select option {
+     background: black ;
+  }
