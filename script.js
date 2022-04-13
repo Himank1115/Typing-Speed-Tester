@@ -6,7 +6,7 @@
 }
  }
 //  Random Quotes Api URL 
- const quoteApiUrl = "https://api.quotable.io/random?minLength=100&maxLength=400";
+ const quoteApiUrl = "https://api.quotable.io/random?minLength=150&maxLength=400";
 const quoteSection = document.getElementById("quote");
 const userInput = document.getElementById("quote-input");
 let quote = "";

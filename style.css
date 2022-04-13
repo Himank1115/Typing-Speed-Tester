@@ -43,7 +43,7 @@
   }
   textarea {
     resize: none;
-    background-color: #ADEFD1FF;
+    background-color: whitesmoke;
     border:  solid ;
     width: 100%;
     border-radius: 5px;
@@ -54,11 +54,12 @@
   button {
     margin-top: 20px;
     margin-left: 35%;
-    background-color: #ADEFD1FF;
+    background-color: whitesmoke;
     border-color: #00203FFF;
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 18px;
+    color: #00203FFF;
   }
   #start-test{
     position: absolute;
@@ -99,29 +100,29 @@
 
   /* color to place holder */
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:#fff;
+    color:black;
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
+    color: black;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color:#fff;
+    color:black;
   }
 /* diffcult level box desgin */
 select {
-  margin-left: 54%;
-  margin-top: 49px;
-  background-color: #ADEFD1FF;
-  color: black;
-  padding: 9px 30px;
+  margin-left: 56%;
+  margin-top: 51px;
+  background-color: whitesmoke;
+  color: #00203FFF;
+  padding: 10px 18px;
   border-radius: 5px;
   font-size: 18px;
   border-width: 2px;
   border-color: #00203FFF;
 }
 .select option {
-     background: black ;
+     background: #ADEFD1FF ;
   }
